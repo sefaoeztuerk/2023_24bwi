@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body, h1, img {
     margin: 0;
     padding: 0;
@@ -6,7 +11,7 @@ body, h1, img {
 .header {
     position: relative;
     background: #0A0101;
-    height: 166px;
+    height: 130px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,19 +20,93 @@ body, h1, img {
 
 .title {
     position: absolute;
-    left: 10px;
-    bottom: 10px;
+    left: 50%; /* Horizontal in die Mitte setzen */
+    transform: translateX(-50%); /* Um die horizontale Mitte auszurichten */
+    bottom: 50px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 35px;
     color: #FFFFFF;
 }
 
-.image img {
+.image-bundesliga {
     position:absolute;
-    height: 160px;
-    right: 10px;
-    top: 10px;
+    height: 120px;
+    right: 0;
+    top: 0;
+}
+
+.subheader {
+    display: flex;
+    justify-content: space-between;
+    background: #F1F1F1;
+    align-items: center;
+    height: 50px;
+    padding: 0 150px;
+}
+
+.subheader ul {
+    flex: 1;
+    text-align: center;
+    direction: none;
+    list-style-type: none;
+    display: flex;
+    font-weight: 600;
+    font-size: 25px;
+    justify-content: space-between;
+}
+
+.subheader-navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.subheader-navbar a:hover {
+    color: aqua;
+    transition: 0.8s;
+    text-decoration: underline;
+}
+
+.content {
+    margin-top: 100px;
+}
+
+.content h1 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.content-flex-box {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.flex-box-item img {
+    width: 480px;
+}
+
+.flex-box-info{
+    padding: 20px;
+    background-color: rgb(47, 47, 47);
+    height: 200px;
+    max-width: 480px;
+}
+
+.flex-box-info-headline {
+    font-weight: 900; 
+    text-overflow: ellipsis;
+    font-size: 30px;
+    color: white;
+}
+
+.flex-box-info-text {
+    font-weight: 900; 
+    text-overflow: ellipsis;
+    font-size: 15px;
+    color: white;
+    margin-top: 15px;
 }
