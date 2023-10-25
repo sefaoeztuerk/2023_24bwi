@@ -1,0 +1,33 @@
+body, h1, img {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative;
+    background: #0A0101;
+    height: 166px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.title {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.image img {
+    position:absolute;
+    height: 160px;
+    right: 10px;
+    top: 10px;
+}
