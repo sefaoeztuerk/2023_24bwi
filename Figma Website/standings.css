@@ -1,0 +1,22 @@
+.tabelle {
+    width: 750px;
+    height: 650px;
+    background-color: beige;
+    
+    display: grid;
+    grid-template-columns: 330px auto;
+}
+
+.clubs-content {
+}
+
+.clubs-content {
+    background-color: blueviolet;
+    height: 50px;
+}
+
+.points-content {
+    background-color: yellowgreen;
+    height: 50px;
+
+}
