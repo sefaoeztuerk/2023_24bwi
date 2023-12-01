@@ -1,22 +1,73 @@
-.tabelle {
-    width: 750px;
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    width: 100%;
     height: 650px;
-    background-color: white;
     
     display: grid;
-    grid-template-columns: 330px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2rem;
+}
+
+.heading {
+    max-width: 100%;
+    height: 9rem;
+    flex-shrink: 0;
+    background-color: black;
 }
 
 .clubs-content {
-}
-
-.clubs-content {
-    background-color: grey;
     height: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .points-content {
-    background-color: grey;
     height: 50px;
-
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    padding-right: 2.3rem;
 }
+
+.points-content-item {
+    text-align: center;
+}
+
+.club-info {
+    display: flex;
+}
+
+.club-info img {
+    width: 3.125rem;
+    height: 1.625rem;
+    flex-shrink: 0;
+    margin-left: 3rem;
+}
+
+.name, .placement{
+    color: #000;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.placement {
+    margin-left: 1.5rem;
+}
+
+.name {
+    margin-left: 1.7rem;
+}
+
+.tabellen-beschreibung {
+    
+}
+
+
+
