@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headline {
+    color: #FFF;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 2rem;
+}
+
+.logo img{
+    margin-right: 2.37rem;
+    width: 35.9375rem;
+    height: 12.41081rem;
+}
+
+.main {
+    margin-top: 2.75rem 2.37rem 0 2.37rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+
+.table {
+    width: 75.375rem;
+    margin: 2.75rem 0;
+    border-radius: 1rem;
+    background: #FFEDED;
+}
+
+.tableHeader, .tableRow {
+    display: grid;
+    grid-template-columns: 29.1875rem 36.0625rem 10.125rem;
+    grid-template-rows: 3.5rem;
+    position: relative;
+}
+
+.tableHeader .middlePart, .tableHeader .leftPart, .tableHeader .rightPart {
+    background-color: black;
+    color: white;
+}
+
+.tableHeader::after, .tableRow::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 74rem;
+    height: 2px;
+    background-color: black;
+    justify-self: center;
+}
+
+.tableRow:last-child::after {
+    display: none;
+}
+
+.leftPart, .middlePart, .rightPart {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    color: #000;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.leftPart {
+    display: grid;
+    grid-template-columns: 3.3rem 6rem auto;
+    justify-items: start;
+    text-transform: none;
+    padding-left: 2.6rem;
+}
+
+.middlePart { 
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.rightPart {
+    text-transform: none;
+}
+
+.upcommingGames {
+    width: 35rem;
+    height: 100%;
+    background-color: #595959;
+    margin-top: 2.75rem;
+    margin-right: 2rem;
+    padding: 1rem 0;
+}
+
+.clubLogo img {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.upGamesTopPart {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0.62rem 2.8rem 1rem 1.25rem;
+}
+
+.week, .titel {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.week {
+    position: relative;
+    align-items: center;
+}
+
+.upGamesTopPart .left {
+    position: absolute;
+    left: -25px;
+    bottom: 0;
+}
+
+.upGamesTopPart .right {
+    position: absolute;
+    right: -25px;
+    bottom: 0;
+}
+
+.upGamesTopPart .left:hover {
+    cursor: pointer;
+}
+
+.upGamesTopPart .right:hover {
+    cursor: pointer;
+}
+
+.upGamesMainPart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+
+    color: #000;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin: 0.62rem 1.62rem;
+}
+
+.itemleftPart {
+    margin-left: 0.4rem;
+    font-size: 0.8rem;
+}
+
+.itemleftPart .time {
+    font-size: 0.7rem;
+}
+
+.mainPartItems {
+    width: 15.5rem;
+    height: 3.6875rem;
+    flex-shrink: 0; 
+    background: #FFEDED;
+    display: grid;
+    grid-template-columns: 5.5rem auto 2rem;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+.mainPartItems:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1560px) {
+
+
+    
+    .main {
+        display: inline-block;
+        justify-content: center;
+    }
+
+    .headline {
+      font-size: 3.5rem;
+    }
+  
+    .logo img {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+    }
+  
+    .table,
+    .upcommingGames {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .leftPart,
+    .middlePart,
+    .rightPart,
+    .week,
+    .titel,
+    .itemleftPart,
+    .itemMidPart,
+    .itemRightPart {
+      font-size: 1rem;
+    }
+  
+    .date,
+    .time {
+      font-size: 0.9rem;
+    }
+  
+    .upGamesTopPart .titel, .currentWeek {
+        font-size: 2rem;
+    }
+
+    .week svg {
+        width: 35px;
+    }
+
+    .week .left {
+        position: absolute;
+        left: -45px;
+        bottom: 0;
+    }
+
+    .week .right {
+        position: absolute;
+        right: -45px;
+        bottom: 0;
+    }
+
+    .week {
+        margin-right: 50px;
+    }
+
+    .upGamesMainPart{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .upcommingGames {
+        margin-bottom: 3rem;
+    }
+
+  }
