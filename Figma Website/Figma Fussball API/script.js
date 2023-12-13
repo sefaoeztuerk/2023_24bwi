@@ -120,9 +120,3 @@ function extractNumberFromString(str) {
     const number = parseInt(str.match(/\d+/)[0]);
     return number;
 }
-
-// Get screen width and height
-const screenWidth = window.screen.width;
-const screenHeight = window.screen.height;
-
-console.log(`Screen Resolution: ${screenWidth} x ${screenHeight}`);
