@@ -1,10 +1,10 @@
 import React from 'react'
-import Weihnachten from "./Weihnachtswebseite/Weihnachten";
+import PeopleContainer from './components/PeopleContainer';
 
 function App() {
   return (
     <div>
-      <Weihnachten/>
+      <PeopleContainer/>
     </div>
   );
 }
