@@ -7,7 +7,9 @@ export default function People() {
         <div>
 
             <h1>People</h1>
-            <Link to="/Friends">Friends</Link>
+            <Link to="/Friends" state={{ name: "Hans", age: 17 }}>
+                Friends
+            </Link>
         </div>
     );
 }
