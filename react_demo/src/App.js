@@ -1,4 +1,6 @@
 import React from 'react';
+import Fussball from '../src/Fussballwebseite/Fussball';
+import '../src/styles/Fussball.css';
 
 const App = () => {
   return (
@@ -7,3 +9,5 @@ const App = () => {
     </div>
   );
 };
+
+export default App;
