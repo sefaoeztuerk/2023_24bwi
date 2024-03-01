@@ -20,7 +20,9 @@ const Fussball = () => {
             .then((data) => fillUpGames(data));
     };
 
+    const fetchUpGames = () => {
 
+    };
 
 }
 
