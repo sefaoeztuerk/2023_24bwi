@@ -21,8 +21,19 @@ const Fussball = () => {
     };
 
     const fetchUpGames = () => {
-
+        fetch("https://api.openligadb.de/getmatchdata/bl1/2023")
+            .then((result) => result.json())
+            .then((data) => fillUpGames(data));
     };
+
+    const fillUpGames = (data) => {
+        const upcomingGamesData = data.filter(
+            (element) => element.group.groupName === spieltag
+        );
+
+        setUpcomingGames(upcomingGamesData);
+    };
+
 
 }
 
