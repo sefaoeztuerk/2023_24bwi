@@ -34,6 +34,17 @@ const Fussball = () => {
         setUpcomingGames(upcomingGamesData);
     };
 
+    return (
+
+        <div className="main">
+            <div class="header">
+                <div class="headline">Season 2023/24</div>
+                <div class="logo">
+                    <img src="bl1.png" alt=""></img>
+                </div>
+            </div>
+        </div>
+    )
 
 }
 
