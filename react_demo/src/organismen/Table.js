@@ -13,4 +13,6 @@ const Table = ({ tableData }) => {
     );
 }
 
+
+
 export default Table;
