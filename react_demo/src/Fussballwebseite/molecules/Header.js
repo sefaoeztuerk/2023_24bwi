@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../Fussballwebseite/atoms/Logo';
+import Logo from '../atoms/Logo.js';
 
 const Header = () => {
     return (
