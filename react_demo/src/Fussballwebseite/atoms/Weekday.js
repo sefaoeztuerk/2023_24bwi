@@ -1,11 +1,13 @@
 import React from 'react'
 
-export default function Weekday() {
+const Weekday = ({ formattedSpieltag, loadNextMatchday, loadPreviousMatchday }) => {
     return (
         <div className='flex justify-between space-x-2 text-3xl font-bold text-white'>
-            <div>-</div>
-            <div>1.Spieltag</div>
-            <div>-</div>
+            <button onClick={loadPreviousMatchday}>&lt;</button>
+            <div>{formattedSpieltag}</div>
+            <button onClick={loadNextMatchday}>&gt;</button>
         </div>
-    )
+    );
 }
+
+export default Weekday;

@@ -1,20 +1,22 @@
 import React from 'react'
 
-export default function UpGameContainer() {
+const UpGameContainer = ({ date, time, team1, team2, team1Result, team2Result }) => {
     return (
         <div className='flex justify-between bg-red-100 text-black font-semibold p-3'>
             <div>
-                <div>11.12.2023</div>
-                <div>19:00</div>
+                <div>{date}</div>
+                <div>{time}</div>
             </div>
             <div>
-                <div>Bremen</div>
-                <div>Bayern</div>
+                <div>{team1}</div>
+                <div>{team2}</div>
             </div>
             <div>
-                <div>0</div>
-                <div>4</div>
+                <div>{team1Result}</div>
+                <div>{team2Result}</div>
             </div>
         </div>
-    )
+    );
 }
+
+export default UpGameContainer;
