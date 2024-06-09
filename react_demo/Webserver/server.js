@@ -17,7 +17,7 @@ const data = [
 
 app.get('/people', async function (req, res) {
 
-    let result = db.query("select * form people")
+    let result = db.query("select * from people")
     console.log(result);
     res.send(data);
 });
