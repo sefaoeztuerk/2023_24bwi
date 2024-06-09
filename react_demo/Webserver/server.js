@@ -26,9 +26,15 @@ app.get('/people', async function (req, res) {
 
 });
 
-app.post('/people', (req, res) => {
-    data.push(req.body);
-    res.send(req.body);
+app.post('/people', async function (req, res) {
+    const person = req.body;
+    let sql = "insert into people values(?,?,?)";
+    try {
+        let result = await db.query(sql, [2, person.firstname, person.lastname])
+        res.send(result);
+    } catch (error) {
+        res.status(404).send(error.message)
+    }
 });
 
 app.listen(3001, function () {
