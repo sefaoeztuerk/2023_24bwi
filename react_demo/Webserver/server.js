@@ -17,9 +17,13 @@ const data = [
 
 app.get('/people', async function (req, res) {
 
-    let result = db.query("select * from people")
-    console.log(result);
-    res.send(data);
+    try {
+        let result = await db.query("select * from people")
+        res.send(result);
+    } catch (error) {
+        res.status(404).send(error.message)
+    }
+
 });
 
 app.post('/people', (req, res) => {
